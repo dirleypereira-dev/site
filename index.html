@@ -1,48 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio de Dirley</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <h1>Bem vindo ao meu portfólio!</h1> 
-    </header>
-  <main> 
-<section class="content">
-<h2>Sobre mim</h2>
-      <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolorem corporis aliquam fugit fuga ducimus qui minima, 
-      itaque consequatur nisi, nemo neque natus accusantium dolor cumque nostrum ea ipsam nam!
-     </p>
-</section >
-<section class="content">
- <h2>Meus Projetos</h2>
-      <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolorem corporis aliquam fugit fuga ducimus qui minima, 
-      itaque consequatur nisi, nemo neque natus accusantium dolor cumque nostrum ea ipsam nam!
-     </p>
-</section>
-<section class="content">
-  <h2>habilidades</h2>
-      <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolorem corporis aliquam fugit fuga ducimus qui minima, 
-      itaque consequatur nisi, nemo neque natus accusantium dolor cumque nostrum ea ipsam nam!
-     </p>
-</section>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saudação por Idioma</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <main class="card">
+
+    <!-- H1 é o título principal da página -->
+    <h1>Escolha um idioma</h1>
+
+    <!-- Texto simples explicando o que o usuário deve fazer -->
+    <p class="descricao">
+      Selecione um idioma e clique no botão para ver a saudação.
+    </p>
+
+    <!-- Label ajuda na acessibilidade: explica o select -->
+    <label for="idioma">Idioma:</label>
+
+    <!-- Select cria uma caixa de escolha -->
+    <select id="idioma">
+      <!-- Option é cada opção dentro do select -->
+      <option value="">🌎 Selecione...</option>
+      <option value="portugues">🇧🇷 Português</option>
+      <option value="ingles">🇺🇸 Inglês</option>
+      <option value="espanhol">🇪🇸 Espanhol</option>
+      <option value="frances">🇫🇷 Francês</option>
+      <option value="italiano">🇮🇹 Italiano</option>
+      <option value="alemao">🇩🇪 Alemão</option>
+      <option value="japones">🇯🇵 Japonês</option>
+    </select>
+
+    <!-- Button cria um botão clicável -->
+    <button id="botaoSaudacao"> Mostrar saudação</button>
+
+    <!-- Span para mostrar a bandeira escolhida -->
+    <span id="bandeira" class="bandeira">🌎</span>
+
+    <!-- P é o parágrafo onde a saudação vai aparecer -->
+    <p id="resultado" class="resultado">
+      Sua saudação aparecerá aqui.
+    </p>
+
+    <p id="Direitos" class="Direitos">&copy;  Dirley 2026</p>
   </main>
-  
-<footer>
-<p>&copy;Todos os direitos reservados.</p>
-<p>
 
+  <!-- Conecta o arquivo JavaScript ao HTML -->
+  <script src="script.js"></script>
 
-</p>
-
-</footer>
 </body>
-
 </html>
-
